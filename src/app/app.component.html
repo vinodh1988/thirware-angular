@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+<h5>{{caption}}</h5>
+<hr>
+<h3>Programmers</h3>
+<ul>
+   <li [ngStyle]="style[i]" *ngFor="let x of programmers,let i=index"> {{x}}
+   </li>
+</ul>
+
+<button *ngFor="let x of [0,1,2,3,4]">{{"toggle visibility"+ (x+1)}}</button>
+
+
+<br/>
+
+<app-second *ngIf="flags[0]" ></app-second>
+<app-second *ngIf="flags[1]" ></app-second>
+<app-second *ngIf="flags[2]" ></app-second>
+
+<app-second *ngIf="flags[3]" ></app-second>
+<app-second *ngIf="flags[4]" ></app-second>
+
+

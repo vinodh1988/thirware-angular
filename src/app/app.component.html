@@ -7,7 +7,7 @@
    </li>
 </ul>
 
-<button *ngFor="let x of [0,1,2,3,4]">{{"toggle visibility"+ (x+1)}}</button>
+<button *ngFor="let x of [0,1,2,3,4]" (click)="toggle(x)">{{"toggle visibility"+ (x+1)}}</button>
 
 
 <br/>

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'First angular app';
   caption = "Developed in Thirdware";
-  flags:boolean[] = [true,false, false , false,true]; 
+  flags:boolean[] = [true,true, true , true,true]; 
   programmers:string[]= ["Hari","Naresh","Krishna","Jason","Rathore"];
   style:any[]=[
     {backgroundColor: 'yellow'},
@@ -17,4 +17,8 @@ export class AppComponent {
     {backgroundColor: 'orange'},
     {backgroundColor: 'tomato'}
   ]
+
+  toggle(x:number):void{
+    this.flags[x]=!this.flags[x];
+  }
 }

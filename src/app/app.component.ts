@@ -10,6 +10,7 @@ export class AppComponent {
   caption = "Developed in Thirdware";
   flags:boolean[] = [true,true, true , true,true]; 
   programmers:string[]= ["Hari","Naresh","Krishna","Jason","Rathore"];
+  
   style:any[]=[
     {backgroundColor: 'yellow'},
     {backgroundColor: 'green'},

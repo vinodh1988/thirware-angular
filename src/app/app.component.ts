@@ -10,6 +10,7 @@ export class AppComponent {
   caption = "Developed in Thirdware";
   flags:boolean[] = [true,true, true , true,true]; 
   programmers:string[]= ["Hari","Naresh","Krishna","Jason","Rathore"];
+
   
   style:any[]=[
     {backgroundColor: 'yellow'},
@@ -17,6 +18,12 @@ export class AppComponent {
     {backgroundColor:'lightblue'},
     {backgroundColor: 'orange'},
     {backgroundColor: 'tomato'}
+  ]
+
+  secondinfo:any[] =[
+     {title:'Technologies', values:['Java','Angular','HTML','SQL']},
+     {title:'Team', values:['Jerry','Anderson','Harry','Mukund','Christopher']},
+     {title:'Technology partners', values:['Oracle','Microsoft','Redhat']},
   ]
 
   toggle(x:number):void{

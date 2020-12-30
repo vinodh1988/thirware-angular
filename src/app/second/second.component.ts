@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SecondComponent implements OnInit {
 
-  @Input() boxno:number=0;
+  @Input('title')  boxtitle ="undefined";
+  @Input('values') items:string[]=[];
 
   constructor() { 
      console.log("instantiated")

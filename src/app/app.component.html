@@ -11,7 +11,7 @@
 
 
 <br/>
-
+<!--
 <app-second *ngIf="flags[0]" [boxno]="1" ></app-second>
 <app-second *ngIf="flags[1]" [boxno]="2"></app-second>
 <app-second *ngIf="flags[2]" [boxno]="3"></app-second>
@@ -19,4 +19,6 @@
 <app-second *ngIf="flags[3]" [boxno]="4"></app-second>
 <app-second *ngIf="flags[4]" [boxno]="5"></app-second>
 
+-->
 
+<app-second *ngFor="let x of secondinfo" [title]="x.title" [values]="x.values"></app-second>

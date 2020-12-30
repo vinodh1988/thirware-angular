@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SecondComponent } from './second/second.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HighlightDirective } from './directives/highlight.directive';
   ], //all your components, directives, pipes
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [], //mention services for dependency injection
   bootstrap: [AppComponent]

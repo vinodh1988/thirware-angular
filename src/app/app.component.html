@@ -11,6 +11,20 @@
 
 
 <br/>
+<br/>
+<br/>
+<input type="text" [(ngModel)]="item">
+<select [(ngModel)]="option">
+   <option value="0">Technologies</option>
+   <option value="1">Team</option>
+   <option value="2">Technology Partners</option>
+</select>
+<button (click)="process()">Add item</button>
+
+<br/>
+<br/>
+<br/>
+<br/>
 <!--
 <app-second *ngIf="flags[0]" [boxno]="1" ></app-second>
 <app-second *ngIf="flags[1]" [boxno]="2"></app-second>

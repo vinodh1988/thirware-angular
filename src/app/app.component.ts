@@ -10,7 +10,8 @@ export class AppComponent {
   caption = "Developed in Thirdware";
   flags:boolean[] = [true,true, true , true,true]; 
   programmers:string[]= ["Hari","Naresh","Krishna","Jason","Rathore"];
-
+  item:string= "type item here";
+  option:number=2;
   
   style:any[]=[
     {backgroundColor: 'yellow'},
@@ -28,5 +29,10 @@ export class AppComponent {
 
   toggle(x:number):void{
     this.flags[x]=!this.flags[x];
+  }
+
+  process():void{
+   // this.secondinfo[this.option].values.push(this.item);
+    this.secondinfo[this.option].values=[...this.secondinfo[this.option].values, this.item]
   }
 }

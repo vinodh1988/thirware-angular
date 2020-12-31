@@ -3,7 +3,7 @@
  <h3><u>{{boxtitle}}</u></h3>
  
  <ul>
-    <li *ngFor="let x of items"> {{x}}</li>
+    <li *ngFor="let x of items;let i=index" (click)="send(x)" > {{x}}</li>
  </ul>
 
 </div>

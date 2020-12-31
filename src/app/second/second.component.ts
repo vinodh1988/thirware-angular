@@ -1,4 +1,5 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, Input, Output, OnChanges, OnInit ,EventEmitter} from '@angular/core';
+
 
 @Component({
   selector: 'app-second',
@@ -9,7 +10,7 @@ export class SecondComponent implements OnInit, OnChanges {
 
   @Input('title')  boxtitle ="undefined";
   @Input('values') items:string[]=[];
-
+  @Output('listen') sendParent:EventEmitter<String> = new EventEmitter<String>();
   constructor() { 
      console.log("instantiated")
      console.log(this.boxtitle,this.items)
@@ -24,6 +25,10 @@ export class SecondComponent implements OnInit, OnChanges {
   ngOnChanges(){
      console.log("received",this.items);
   }
-  }
+  send(x:string):void
+{
+  this.sendParent.emit(x);
+} 
+ }
 
 

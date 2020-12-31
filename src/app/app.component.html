@@ -25,6 +25,10 @@
 <br/>
 <br/>
 <br/>
+
+{{info}}
+
+<br/><br/>
 <!--
 <app-second *ngIf="flags[0]" [boxno]="1" ></app-second>
 <app-second *ngIf="flags[1]" [boxno]="2"></app-second>
@@ -35,4 +39,5 @@
 
 -->
 
-<app-second *ngFor="let x of secondinfo" [title]="x.title" [values]="x.values"></app-second>
+<app-second *ngFor="let x of secondinfo" [title]="x.title" [values]="x.values" 
+(listen)="receiveInfo($event,x.title)" ></app-second>

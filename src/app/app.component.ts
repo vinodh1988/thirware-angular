@@ -12,7 +12,7 @@ export class AppComponent {
   programmers:string[]= ["Hari","Naresh","Krishna","Jason","Rathore"];
   item:string= "type item here";
   option:number=2;
-  
+  info="no information from child yet";
   style:any[]=[
     {backgroundColor: 'yellow'},
     {backgroundColor: 'green'},
@@ -34,5 +34,9 @@ export class AppComponent {
   process():void{
    // this.secondinfo[this.option].values.push(this.item);
     this.secondinfo[this.option].values=[...this.secondinfo[this.option].values, this.item]
+  }
+
+  receiveInfo(info:any,boxno:string):void{
+    this.info = info + " is received from"+boxno;
   }
 }
